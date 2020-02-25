@@ -10,7 +10,7 @@ class ClientsModel extends Model
     protected $fillable = ['nom', 'prenom', 'telephone', 'mail'];
     public $timestamps = false;
 
-    function client(){
+    function clients(){
         return $this->hasMany(ExchangesModel::class,'id_clients');
     }
 }

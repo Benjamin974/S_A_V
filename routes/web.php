@@ -18,5 +18,5 @@ Route::prefix('clients')->group(function () {
 
 Route::prefix('echanges')->group(function () {
     Route::get('/', 'ExchangesController@index');
-    Route::post('add', 'ExchangesController@add');
+    Route::post('/', 'ExchangesController@add');
 });

@@ -37,7 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    function user(){
+    function users(){
         return $this->hasMany(ExchangesModel::class,'id_users');
     }
 }

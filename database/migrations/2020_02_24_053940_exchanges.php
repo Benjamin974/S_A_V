@@ -16,7 +16,8 @@ class Exchanges extends Migration
         Schema::create('exchanges', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('commentaire');
-
+            $table->dateTime('date_echange');
+            
             $table->unsignedBigInteger('id_clients');
             $table->foreign('id_clients')->references('id')->on('clients');
          

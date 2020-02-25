@@ -16,6 +16,7 @@ class ExchangesSeeder extends Seeder
             [
                 "id" => 1,
                 "commentaire" => "commentestUn",
+                "date_echange" => "2020-02-12",
                 "id_clients" => 1,
                 "id_users" => 1,
                 "id_exchanges_types" => 1,
@@ -23,6 +24,7 @@ class ExchangesSeeder extends Seeder
             [
                 "id" => 2,
                 "commentaire" => "commentestDeux",
+                "date_echange" => "2020-02-12",
                 "id_clients" => 2,
                 "id_users" => 2,
                 "id_exchanges_types" => 2,
@@ -30,6 +32,7 @@ class ExchangesSeeder extends Seeder
             [
                 "id" => 3,
                 "commentaire" => "commentestTrois",
+                "date_echange" => "2020-02-12",
                 "id_clients" => 3,
                 "id_users" => 3,
                 "id_exchanges_types" => 1,

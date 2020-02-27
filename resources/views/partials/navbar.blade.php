@@ -7,7 +7,7 @@
       <a class="nav-link active" href="/clients">Clients</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="/echanges">Echanges</a>
+      <a class="nav-link active" href="/echange">Echange</a>
     </li>
   </ul>
 </nav>

@@ -23,4 +23,6 @@ class ClientsController extends Controller
 
         return view('partials.information')->with('client', $clients);
     }
+
+    
 }

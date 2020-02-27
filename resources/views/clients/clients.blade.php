@@ -7,6 +7,7 @@
         <h5 class="card-title">{{ $client->nom }}</h5>
         <h5 class="card-title">{{ $client->prenom }}</h5>
         <a href="/clients/{{ $client->id }}"><button class="btn btn-outline-info">Plus d'informations</button></a>
+        <a href="/clients/echanges/{{ $client->id }}"><button class="btn btn-outline-info">Historiques des échanges</button></a>
     </div>
 </div>
 @endforeach

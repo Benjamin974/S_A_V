@@ -16,14 +16,15 @@ ROute::get('/', function() {
 
 Route::prefix('clients')->group(function () {
     Route::get('/', 'ClientsController@index');
-    Route::get('/{id}', 'ClientsController@moreInfo')->where('id', "[0-9]+");
+    Route::get('/{id}', 'ClientsController@moreInfo'); 
+    Route::get('/echanges/{id}', 'ExchangesController@show');
+   
 });
 
 Route::prefix('echange')->group(function () {
     Route::get('/', 'ExchangeController@index');
     Route::post('/', 'ExchangeController@add');
+    
 });
 
-Route::prefix('echanges')->group(function () {
-    Route::get('/', 'ExchangesController@index');
-});
+   

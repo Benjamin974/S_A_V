@@ -2,7 +2,7 @@
 @extends('layouts.app')
 @section('content')
  <div class="container mb-5 mt-5">
-<h1> ECHANGES</h1>
+<h1> AJOUT D'UN ECHANGE </h1>
  <form action="/echange" method="POST">
     {{ csrf_field() }}
     <div class="form-group">

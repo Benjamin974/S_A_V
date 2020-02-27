@@ -24,14 +24,22 @@ class ExchangeController extends Controller
         $users = User::All();
         $usersCollection = UsersRessources::collection($users);
 
-        $exchanges = ExchangesModel::All();
-        $exchangesCollection = ExchangesRessources::collection($exchanges);
-        
+        $ajouter = "";
         // return $exchangesCollection;
-        return view("clients.exchange", ['exchangesTypes' => $exchangesTypesCollection, 'clients' => $clientsCollection, 'users' => $usersCollection]);
+        return view("clients.exchange", ['ajouter' => $ajouter, 'exchangesTypes' => $exchangesTypesCollection, 'clients' => $clientsCollection, 'users' => $usersCollection]);
     }
 
     public function add(Request $request) {
+        $clients = ClientsModel::All();
+        $clientsCollection = UsersRessources::collection($clients);
+
+        $exchangesTypes = ExchangesTypesModel::All();
+        $exchangesTypesCollection = UsersRessources::collection($exchangesTypes);
+
+        $users = User::All();
+        $usersCollection = UsersRessources::collection($users);
+
+        
         $validator = Validator::make($request->all(), [
             'date_echange' => 'required',
             'commentaire' => 'required',
@@ -43,6 +51,13 @@ class ExchangeController extends Controller
         $donneesBdd = ExchangesModel::create(
             $validator
         )->save();
-       return "Ajouter dans bdd";
+        
+        if($validator) {
+            $ajouter = "votre commentaire à été ajouter à la bdd";
+        } else {
+            $ajouter = "";
+        };
+        
+       return view('clients.exchange', ['ajouter' => $ajouter, 'exchangesTypes' => $exchangesTypesCollection, 'clients' => $clientsCollection, 'users' => $usersCollection]);
     }
 }

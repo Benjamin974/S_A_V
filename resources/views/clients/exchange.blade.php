@@ -39,5 +39,7 @@
     </div>
     <button type="submit" class="btn btn-outline-info">Ajouter</button>
     </form>
+
+<p>{{ $ajouter }}</p>
 </div>
 @endsection

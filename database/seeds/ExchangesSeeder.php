@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 
 class ExchangesSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *
@@ -15,7 +16,7 @@ class ExchangesSeeder extends Seeder
         $array = [
             [
                 "id" => 1,
-                "commentaire" => "commentestUn",
+                "commentaire" => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis aperiam architecto magnam maxime quae odit labore reiciendis aspernatur inventore veniam",
                 "date_echange" => "2020-02-12",
                 "id_clients" => 1,
                 "id_users" => 1,
@@ -23,7 +24,7 @@ class ExchangesSeeder extends Seeder
             ],
             [
                 "id" => 2,
-                "commentaire" => "commentestDeux",
+                "commentaire" => "Animi sit dolorem pariatur placeat exercitationem adipisci quo, quasi nulla!",
                 "date_echange" => "2020-02-12",
                 "id_clients" => 2,
                 "id_users" => 2,
@@ -31,7 +32,7 @@ class ExchangesSeeder extends Seeder
             ],
             [
                 "id" => 3,
-                "commentaire" => "commentestTrois",
+                "commentaire" => "Esse earum itaque atque, tenetur, dolores libero enim sunt eligendi harum. Repudiandae, rem voluptatibus. Qui soluta voluptates cum asperiores quisquam.",
                 "date_echange" => "2020-02-12",
                 "id_clients" => 3,
                 "id_users" => 3,
@@ -39,7 +40,7 @@ class ExchangesSeeder extends Seeder
             ],
             [
                 "id" => 4,
-                "commentaire" => "commentestTrois",
+                "commentaire" => " Voluptates molestiae eaque nemo dolorem vitae saepe quos qui dolor labore ab asperiores, nulla quis, ex corporis magnam animi odit eligendi id?",
                 "date_echange" => "2020-02-12",
                 "id_clients" => 1,
                 "id_users" => 3,
